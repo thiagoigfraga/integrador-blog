@@ -83,17 +83,6 @@ export function NewPost() {
             required
           />
         </label>
-        <label>
-          <span>Tags:</span>
-          <input
-            type="text"
-            name="tags"
-            placeholder="Insira as tags separadas por vírgula"
-            value={tags}
-            onChange={(e) => setTags(e.target.value)}
-            required
-          />
-        </label>
         {!response.loading && <button className="btn">Criar Post</button>}
         {response.loading && (
           <button className="btn" disabled>
