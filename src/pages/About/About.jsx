@@ -5,7 +5,7 @@ export function About() {
   return (
     <div className={styles.about}>
       <h2>
-        Sobre o <span>Blog</span>
+        Sobre o <span>MRT Blog</span>
       </h2>
       <p>Um projeto feito em React no front-end e firebase no back-end</p>
       <p>Marcelo Pavani, Rafael Fischer e Thiago Fraga</p>
