@@ -11,7 +11,7 @@ export function NavBar() {
   return (
     <nav className={styles.navBar}>
       <NavLink to="/" className={styles.brand}>
-        <span>Blog</span>
+        <span>MRT Blog</span>
       </NavLink>
 
       <ul className={styles.linksList}>

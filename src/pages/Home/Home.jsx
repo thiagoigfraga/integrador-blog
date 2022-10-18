@@ -21,11 +21,11 @@ export function Home() {
 
   return (
     <div className={styles.home}>
-      <h1>Veja os nossos posts mais recentes</h1>
+      <h1>Veja posts de diferentes pessoas!</h1>
       <form onSubmit={handleSubmit} className={styles.searchForm}>
         <input
           type="text"
-          placeholder="Insira um interesse aqui..."
+          placeholder="Insira um assunto aqui..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />

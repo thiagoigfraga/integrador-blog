@@ -22,10 +22,18 @@ export function useFetchDocuments(docCollection, search = null, uid = null) {
 
       const collectionRef = await collection(db, docCollection);
 
+      console.log(collectionRef);
+
       try {
         let q;
 
-        if (uid) {
+        if (search) {
+          q = await query(
+            collectionRef,
+            where(search, "array-contains-any", "title"),
+            orderBy("createdAt", "desc")
+          );
+        } else if (uid) {
           q = await query(
             collectionRef,
             where("uid", "==", uid),
